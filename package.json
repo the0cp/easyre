@@ -1,0 +1,51 @@
+{
+  "name": "easyre",
+  "displayName": "easyre",
+  "description": "Write regex expression easily",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "easyre.email",
+      "title": "easyre.email: Insert Email Regex"
+    },
+    {
+      "command": "easyre.tel",
+      "title": "easyre.tel: Insert Phone Number Regex"
+    },
+    {
+      "command": "easyre.date",
+      "title": "easyre.date: Insert Date Regex"
+    },
+    {
+      "command": "easyre.url",
+      "title": "easyre.url: Insert URL Regex"
+    }],
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.23.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}

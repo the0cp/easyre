@@ -1,0 +1,16 @@
+{
+    "Email Regex": {
+      "prefix": "easyre.email",
+      "body": [
+        "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      ],
+      "description": "Insert a common Email Regex"
+    },
+    "URL Regex": {
+      "prefix": "easyre.url",
+      "body": [
+        "^(https?|ftp):\\/\\/[^\\s/$.?#].[^\\s]*$"
+      ],
+      "description": "Insert a common URL Regex"
+    }
+  }
