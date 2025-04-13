@@ -3,6 +3,7 @@
   "displayName": "EasyRe",
   "description": "Write regex expressions easily",
   "version": "0.0.1",
+  "publisher": "the0cp",
   "author": {
     "name": "the0cp"
   },
