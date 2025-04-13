@@ -1,16 +1,296 @@
 {
-    "Email Regex": {
-      "prefix": "easyre.email",
-      "body": [
-        "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
-      ],
-      "description": "Insert a common Email Regex"
-    },
-    "URL Regex": {
-      "prefix": "easyre.url",
-      "body": [
-        "^(https?|ftp):\\/\\/[^\\s/$.?#].[^\\s]*$"
-      ],
-      "description": "Insert a common URL Regex"
-    }
+  "Email Regex": {
+    "prefix": "easyre.email",
+    "body": [
+      "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+    ],
+    "description": "Insert a common Email Regex"
+  },
+  "URL Regex": {
+    "prefix": "easyre.url",
+    "body": [
+      "^(https?|ftp):\\/\\/[^\\s/$.?#].[^\\s]*$"
+    ],
+    "description": "Insert a common URL Regex"
+  },
+  "Date Regex": {
+    "prefix": "easyre.date",
+    "body": [
+      "^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$"
+    ],
+    "description": "Insert a common Date Regex"
+  },
+  "24-Hour Time Regex": {
+    "prefix": "easyre.time24",
+    "body": [
+      "^([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$"
+    ],
+    "description": "Insert a 24-Hour Time Regex"
+  },
+  "12-Hour Time Regex": {
+    "prefix": "easyre.time12",
+    "body": [
+      "^(0\\d|1[0-2]):[0-5]\\d:[0-5]\\d\\s?(AM|PM)$"
+    ],
+    "description": "Insert a 12-Hour Time Regex"
+  },
+  "IPv4 Regex": {
+    "prefix": "easyre.ipv4",
+    "body": [
+      "^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+    ],
+    "description": "Insert an IPv4 Regex"
+  },
+  "IPv6 Regex": {
+    "prefix": "easyre.ipv6",
+    "body": [
+      "(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))"
+    ],
+    "description": "Insert an IPv6 Regex"
+  },
+  "Username Regex": {
+    "prefix": "easyre.username",
+    "body": [
+      "^[a-zA-Z0-9_-]{4,16}$"
+    ],
+    "description": "Insert a Username Regex"
+  },
+  "Password Regex": {
+    "prefix": "easyre.passwd",
+    "body": [
+      "^.*(?=.{6,})(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*? ]).*$"
+    ],
+    "description": "Insert a Password Regex"
+  },
+  "Phone Number Regex": {
+    "prefix": "easyre.tel",
+    "body": [
+      "^\\(?\\d{3}\\)?[-.\\s]?\\d{3}[-.\\s]?\\d{4}$"
+    ],
+    "description": "Insert a Phone Number Regex"
+  },
+  "US Phone Number Regex": {
+    "prefix": "easyre.tel-us",
+    "body": [
+      "^\\(?\\d{3}\\)?[-.\\s]?\\d{3}[-.\\s]?\\d{4}$"
+    ],
+    "description": "Insert a US Phone Number Regex"
+  },
+  "UK Phone Number Regex": {
+    "prefix": "easyre.tel-uk",
+    "body": [
+      "^7\\d{3}\\s?\\d{6}$"
+    ],
+    "description": "Insert a UK Phone Number Regex"
+  },
+  "French Phone Number Regex": {
+    "prefix": "easyre.tel-fr",
+    "body": [
+      "^[1-9](\\d{2}){4}$"
+    ],
+    "description": "Insert a French Phone Number Regex"
+  },
+  "German Phone Number Regex": {
+    "prefix": "easyre.tel-de",
+    "body": [
+      "^(1\\d{1,4}|[2-9]\\d{1,4})[-.\\s]?\\d{2,12}$"
+    ],
+    "description": "Insert a German Phone Number Regex"
+  },
+  "Japanese Phone Number Regex": {
+    "prefix": "easyre.tel-jp",
+    "body": [
+      "^0\\d{1,4}[-.\\s]?\\d{1,4}[-.\\s]?\\d{4}$"
+    ],
+    "description": "Insert a Japanese Phone Number Regex"
+  },
+  "Chinese Phone Number Regex": {
+    "prefix": "easyre.tel-cn",
+    "body": [
+      "^1[3-9]\\d{9}$"
+    ],
+    "description": "Insert a Chinese Phone Number Regex"
+  },
+  "Indian Phone Number Regex": {
+    "prefix": "easyre.tel-in",
+    "body": [
+      "^[6-9]\\d{9}$"
+    ],
+    "description": "Insert an Indian Phone Number Regex"
+  },
+  "Russian Phone Number Regex": {
+    "prefix": "easyre.tel-ru",
+    "body": [
+      "^\\d{3}[-.\\s]?\\d{3}[-.\\s]?\\d{2}[-.\\s]?\\d{2}$"
+    ],
+    "description": "Insert a Russian Phone Number Regex"
+  },
+  "Brazilian Phone Number Regex": {
+    "prefix": "easyre.tel-br",
+    "body": [
+      "^(\\d{2})\\s?9?\\d{4}[-.\\s]?\\d{4}$"
+    ],
+    "description": "Insert a Brazilian Phone Number Regex"
+  },
+  "Australian Phone Number Regex": {
+    "prefix": "easyre.tel-au",
+    "body": [
+      "^4\\d{2}\\s?\\d{3}\\s?\\d{3}$"
+    ],
+    "description": "Insert an Australian Phone Number Regex"
+  },
+  "Generic Postal Code Regex": {
+    "prefix": "easyre.postal",
+    "body": [
+      "^\\d{5}(-\\d{4})?$"
+    ],
+    "description": "Insert a Generic Postal Code Regex"
+  },
+  "US Postal Code Regex": {
+    "prefix": "easyre.postal-us",
+    "body": [
+      "^\\d{5}(-\\d{4})?$"
+    ],
+    "description": "Insert a US Postal Code Regex"
+  },
+  "Canadian Postal Code Regex": {
+    "prefix": "easyre.postal-ca",
+    "body": [
+      "^[A-Za-z]\\d[A-Za-z] ?\\d[A-Za-z]\\d$"
+    ],
+    "description": "Insert a Canadian Postal Code Regex"
+  },
+  "UK Postal Code Regex": {
+    "prefix": "easyre.postal-uk",
+    "body": [
+      "^([A-Za-z]{1,2}\\d[A-Za-z\\d]? ?\\d[A-Za-z]{2})$"
+    ],
+    "description": "Insert a UK Postal Code Regex"
+  },
+  "Australian Postal Code Regex": {
+    "prefix": "easyre.postal-au",
+    "body": [
+      "^\\d{4}$"
+    ],
+    "description": "Insert an Australian Postal Code Regex"
+  },
+  "Indian Postal Code Regex": {
+    "prefix": "easyre.postal-in",
+    "body": [
+      "^\\d{6}$"
+    ],
+    "description": "Insert an Indian Postal Code Regex"
+  },
+  "Chinese Postal Code Regex": {
+    "prefix": "easyre.postal-cn",
+    "body": [
+      "^\\d{6}$"
+    ],
+    "description": "Insert a Chinese Postal Code Regex"
+  },
+  "German Postal Code Regex": {
+    "prefix": "easyre.postal-de",
+    "body": [
+      "^\\d{5}$"
+    ],
+    "description": "Insert a German Postal Code Regex"
+  },
+  "French Postal Code Regex": {
+    "prefix": "easyre.postal-fr",
+    "body": [
+      "^\\d{5}$"
+    ],
+    "description": "Insert a French Postal Code Regex"
+  },
+  "Japanese Postal Code Regex": {
+    "prefix": "easyre.postal-jp",
+    "body": [
+      "^\\d{3}-\\d{4}$"
+    ],
+    "description": "Insert a Japanese Postal Code Regex"
+  },
+  "Russian Postal Code Regex": {
+    "prefix": "easyre.postal-ru",
+    "body": [
+      "^\\d{6}$"
+    ],
+    "description": "Insert a Russian Postal Code Regex"
+  },
+  "Brazilian Postal Code Regex": {
+    "prefix": "easyre.postal-br",
+    "body": [
+      "^\\d{5}-\\d{3}$"
+    ],
+    "description": "Insert a Brazilian Postal Code Regex"
+  },
+  "Italian Postal Code Regex": {
+    "prefix": "easyre.postal-it",
+    "body": [
+      "^\\d{5}$"
+    ],
+    "description": "Insert an Italian Postal Code Regex"
+  },
+  "Dutch Postal Code Regex": {
+    "prefix": "easyre.postal-nl",
+    "body": [
+      "^\\d{4}\\s?[A-Za-z]{2}$"
+    ],
+    "description": "Insert a Dutch Postal Code Regex"
+  },
+  "Swiss Postal Code Regex": {
+    "prefix": "easyre.postal-ch",
+    "body": [
+      "^\\d{4}$"
+    ],
+    "description": "Insert a Swiss Postal Code Regex"
+  },
+  "New Zealand Postal Code Regex": {
+    "prefix": "easyre.postal-nz",
+    "body": [
+      "^\\d{4}$"
+    ],
+    "description": "Insert a New Zealand Postal Code Regex"
+  },
+  "Fax Number Regex": {
+    "prefix": "easyre.fax",
+    "body": [
+      "^(([0\\+]\\d{2,3}-)?(0\\d{2,3})-)(\\d{7,8})(-(\\d{3,}))?$"
+    ],
+    "description": "Insert a Fax Number Regex"
+  },
+  "Hex Color Regex": {
+    "prefix": "easyre.colorhex",
+    "body": [
+      "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    ],
+    "description": "Insert a Hex Color Regex"
+  },
+  "RGB Color Regex": {
+    "prefix": "easyre.colorrgb",
+    "body": [
+      "^rgb\\((\\d{1,3},\\s?){2}\\d{1,3}\\)$"
+    ],
+    "description": "Insert an RGB Color Regex"
+  },
+  "RGBA Color Regex": {
+    "prefix": "easyre.colorrgba",
+    "body": [
+      "^rgba\\((\\d{1,3},\\s?){3}\\d(\\.\\d+)?\\)$"
+    ],
+    "description": "Insert an RGBA Color Regex"
+  },
+  "HSL Color Regex": {
+    "prefix": "easyre.colorhsl",
+    "body": [
+      "^hsl\\((\\d{1,3},\\s?){2}\\d(\\.\\d+)?\\)$"
+    ],
+    "description": "Insert an HSL Color Regex"
+  },
+  "HSLA Color Regex": {
+    "prefix": "easyre.colorhsla",
+    "body": [
+      "^hsla\\((\\d{1,3},\\s?){3}\\d(\\.\\d+)?\\)$"
+    ],
+    "description": "Insert an HSLA Color Regex"
   }
+}
