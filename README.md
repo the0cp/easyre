@@ -1,5 +1,7 @@
 # EasyRe
 
+![icon](https://github.com/the0cp/easyre/assets/icon-128.png)
+
 Write Regex expressions faster with easyre.
 
 `Ctrl`+`Shift`+`P` to open the command panel. The insertion commands will be `easyre.xxx`

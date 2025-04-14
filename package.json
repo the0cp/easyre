@@ -28,6 +28,7 @@
     "type": "git",
     "url": "https://github.com/the0cp/easyre.git"
   },
+  "icon": "assets/icon.png",
   "activationEvents": [],
   "main": "./src/extension.js",
   "contributes": {
