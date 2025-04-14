@@ -214,10 +214,6 @@
         "path": "./snippets/snippets.json"
       },
       {
-        "language": "perl6",
-        "path": "./snippets/snippets.json"
-      },
-      {
         "language": "r",
         "path": "./snippets/snippets.json"
       },
@@ -255,14 +251,6 @@
       },
       {
         "language": "cpp",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "nginx", 
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "apacheconf",
         "path": "./snippets/snippets.json"
       }
     ]

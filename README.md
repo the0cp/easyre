@@ -1,6 +1,6 @@
 # EasyRe
 
-![icon](https://github.com/the0cp/easyre/blob/main/assets/icon-128.png)
+![icon](https://raw.githubusercontent.com/the0cp/easyre/main/assets/icon-128.png)
 
 Write Regex expressions easily with easyre.
 
@@ -10,6 +10,6 @@ Code snippets are templates that make it easier to enter repeating code patterns
 
 Code snippets for regex is also included, type `easyre.xxx` to insert.
 
-![demo](https://github.com/the0cp/easyre/blob/main/assets/demo.png)
+![demo](https://raw.githubusercontent.com/the0cp/easyre/main/assets/demo.png)
 
-![demo](https://github.com/the0cp/easyre/blob/main/assets/demo-1.png)
+![demo](https://raw.githubusercontent.com/the0cp/easyre/main/assets/demo-1.png)
