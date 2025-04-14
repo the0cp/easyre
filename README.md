@@ -1,6 +1,6 @@
 # EasyRe
 
-![icon](https://github.com/the0cp/easyre/assets/icon-128.png)
+![icon](https://github.com/the0cp/easyre/blob/main/assets/icon-128.png)
 
 Write Regex expressions faster with easyre.
 
