@@ -2,7 +2,7 @@
   "name": "easyre",
   "displayName": "EasyRe",
   "description": "Write regex expressions easily",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "the0cp",
   "author": {
     "name": "the0cp"
@@ -32,178 +32,184 @@
   "activationEvents": [],
   "main": "./src/extension.js",
   "contributes": {
-    "commands": [{
-      "command": "easyre.email",
-      "title": "easyre.email: Insert Email Regex"
-    },
-    {
-      "command": "easyre.url",
-      "title": "easyre.url: Insert URL Regex"
-    },
-    {
-      "command": "easyre.date",
-      "title": "easyre.date: Insert Date Regex"
-    },
-    {
-      "command": "easyre.time",
-      "title": "easyre.time: Insert Time Regex"
-    },
-    {
-      "command": "easyre.time24",
-      "title": "easyre.time24: Insert 24-Hour Time Regex"
-    },
-    {
-      "command": "easyre.time12",
-      "title": "easyre.time12: Insert 12-Hour Time Regex"
-    },
-    {
-      "command": "easyre.ipv4",
-      "title": "easyre.ipv4: Insert IPv4 Regex"
-    },
-    {
-      "command": "easyre.ipv6",
-      "title": "easyre.ipv6: Insert IPv6 Regex"
-    },
-    {
-      "command": "easyre.username",
-      "title": "easyre.username: Insert Username Regex"
-    },
-    {
-      "command": "easyre.passwd",
-      "title": "easyre.passwd: Insert Password Regex"
-    },
-    {
-      "command": "easyre.tel",
-      "title": "easyre.tel: Insert Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-us",
-      "title": "easyre.tel-us: Insert US Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-uk",
-      "title": "easyre.tel-uk: Insert UK Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-fr",
-      "title": "easyre.tel-fr: Insert French Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-de",
-      "title": "easyre.tel-de: Insert German Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-jp",
-      "title": "easyre.tel-jp: Insert Japanese Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-cn",
-      "title": "easyre.tel-cn: Insert Chinese Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-in",
-      "title": "easyre.tel-in: Insert Indian Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-ru",
-      "title": "easyre.tel-ru: Insert Russian Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-br",
-      "title": "easyre.tel-br: Insert Brazilian Phone Number Regex"
-    },
-    {
-      "command": "easyre.tel-au",
-      "title": "easyre.tel-au: Insert Australian Phone Number Regex"
-    },
-    {
-      "command": "easyre.postal",
-      "title": "easyre.postal: Insert Generic Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-us",
-      "title": "easyre.postal-us: Insert US Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-ca",
-      "title": "easyre.postal-ca: Insert Canadian Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-uk",
-      "title": "easyre.postal-uk: Insert UK Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-au",
-      "title": "easyre.postal-au: Insert Australian Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-in",
-      "title": "easyre.postal-in: Insert Indian Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-cn",
-      "title": "easyre.postal-cn: Insert Chinese Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-de",
-      "title": "easyre.postal-de: Insert German Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-fr",
-      "title": "easyre.postal-fr: Insert French Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-jp",
-      "title": "easyre.postal-jp: Insert Japanese Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-ru",
-      "title": "easyre.postal-ru: Insert Russian Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-br",
-      "title": "easyre.postal-br: Insert Brazilian Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-it",
-      "title": "easyre.postal-it: Insert Italian Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-nl",
-      "title": "easyre.postal-nl: Insert Dutch Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-ch",
-      "title": "easyre.postal-ch: Insert Swiss Postal Code Regex"
-    },
-    {
-      "command": "easyre.postal-nz",
-      "title": "easyre.postal-nz: Insert New Zealand Postal Code Regex"
-    },
-    {
-      "command": "easyre.fax",
-      "title": "easyre.fax: Insert Fax Number Regex"
-    },
-    {
-      "command": "easyre.colorhex",
-      "title": "easyre.colorhex: Insert Hex Color Regex"
-    },
-    {
-      "command": "easyre.colorrgb",
-      "title": "easyre.colorrgb: Insert RGB Color Regex"
-    },
-    {
-      "command": "easyre.colorrgba",
-      "title": "easyre.colorrgba: Insert RGBA Color Regex"
-    },
-    {
-      "command": "easyre.colorhsl",
-      "title": "easyre.colorhsl: Insert HSL Color Regex"
-    },
-    {
-      "command": "easyre.colorhsla",
-      "title": "easyre.colorhsla: Insert HSLA Color Regex"
-    }],
+    "commands": [
+      {
+        "command": "easyre.parse",
+        "title": "easyre.parse: Parse Regex and Visualize it (Jex.im)"
+      },
+      {
+        "command": "easyre.email",
+        "title": "easyre.email: Insert Email Regex"
+      },
+      {
+        "command": "easyre.url",
+        "title": "easyre.url: Insert URL Regex"
+      },
+      {
+        "command": "easyre.date",
+        "title": "easyre.date: Insert Date Regex"
+      },
+      {
+        "command": "easyre.time",
+        "title": "easyre.time: Insert Time Regex"
+      },
+      {
+        "command": "easyre.time24",
+        "title": "easyre.time24: Insert 24-Hour Time Regex"
+      },
+      {
+        "command": "easyre.time12",
+        "title": "easyre.time12: Insert 12-Hour Time Regex"
+      },
+      {
+        "command": "easyre.ipv4",
+        "title": "easyre.ipv4: Insert IPv4 Regex"
+      },
+      {
+        "command": "easyre.ipv6",
+        "title": "easyre.ipv6: Insert IPv6 Regex"
+      },
+      {
+        "command": "easyre.username",
+        "title": "easyre.username: Insert Username Regex"
+      },
+      {
+        "command": "easyre.passwd",
+        "title": "easyre.passwd: Insert Password Regex"
+      },
+      {
+        "command": "easyre.tel",
+        "title": "easyre.tel: Insert Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-us",
+        "title": "easyre.tel-us: Insert US Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-uk",
+        "title": "easyre.tel-uk: Insert UK Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-fr",
+        "title": "easyre.tel-fr: Insert French Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-de",
+        "title": "easyre.tel-de: Insert German Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-jp",
+        "title": "easyre.tel-jp: Insert Japanese Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-cn",
+        "title": "easyre.tel-cn: Insert Chinese Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-in",
+        "title": "easyre.tel-in: Insert Indian Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-ru",
+        "title": "easyre.tel-ru: Insert Russian Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-br",
+        "title": "easyre.tel-br: Insert Brazilian Phone Number Regex"
+      },
+      {
+        "command": "easyre.tel-au",
+        "title": "easyre.tel-au: Insert Australian Phone Number Regex"
+      },
+      {
+        "command": "easyre.postal",
+        "title": "easyre.postal: Insert Generic Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-us",
+        "title": "easyre.postal-us: Insert US Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-ca",
+        "title": "easyre.postal-ca: Insert Canadian Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-uk",
+        "title": "easyre.postal-uk: Insert UK Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-au",
+        "title": "easyre.postal-au: Insert Australian Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-in",
+        "title": "easyre.postal-in: Insert Indian Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-cn",
+        "title": "easyre.postal-cn: Insert Chinese Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-de",
+        "title": "easyre.postal-de: Insert German Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-fr",
+        "title": "easyre.postal-fr: Insert French Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-jp",
+        "title": "easyre.postal-jp: Insert Japanese Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-ru",
+        "title": "easyre.postal-ru: Insert Russian Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-br",
+        "title": "easyre.postal-br: Insert Brazilian Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-it",
+        "title": "easyre.postal-it: Insert Italian Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-nl",
+        "title": "easyre.postal-nl: Insert Dutch Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-ch",
+        "title": "easyre.postal-ch: Insert Swiss Postal Code Regex"
+      },
+      {
+        "command": "easyre.postal-nz",
+        "title": "easyre.postal-nz: Insert New Zealand Postal Code Regex"
+      },
+      {
+        "command": "easyre.fax",
+        "title": "easyre.fax: Insert Fax Number Regex"
+      },
+      {
+        "command": "easyre.colorhex",
+        "title": "easyre.colorhex: Insert Hex Color Regex"
+      },
+      {
+        "command": "easyre.colorrgb",
+        "title": "easyre.colorrgb: Insert RGB Color Regex"
+      },
+      {
+        "command": "easyre.colorrgba",
+        "title": "easyre.colorrgba: Insert RGBA Color Regex"
+      },
+      {
+        "command": "easyre.colorhsl",
+        "title": "easyre.colorhsl: Insert HSL Color Regex"
+      },
+      {
+        "command": "easyre.colorhsla",
+        "title": "easyre.colorhsla: Insert HSLA Color Regex"
+      }
+    ],
     "snippets": [
       {
         "language": "php",
@@ -222,7 +228,7 @@
         "path": "./snippets/snippets.json"
       },
       {
-        "language": "ruby", 
+        "language": "ruby",
         "path": "./snippets/snippets.json"
       },
       {
@@ -234,15 +240,15 @@
         "path": "./snippets/snippets.json"
       },
       {
-        "language": "javascriptreact", 
+        "language": "javascriptreact",
         "path": "./snippets/snippets.json"
       },
       {
-        "language": "typescriptreact", 
+        "language": "typescriptreact",
         "path": "./snippets/snippets.json"
       },
       {
-        "language": "shellscript", 
+        "language": "shellscript",
         "path": "./snippets/snippets.json"
       },
       {
@@ -261,11 +267,11 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.99.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "eslint": "^9.23.0",
+    "@types/vscode": "^1.99.0",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0"
   }
 }

@@ -87,6 +87,50 @@ function activate(context) {
 			console.warn('Regex not found');
 		}
 	});
+
+	const parseDisposable = vscode.commands.registerCommand('easyre.parse', () => {
+		const editor = vscode.window.activeTextEditor;
+		if(editor){
+			const selection = editor.selection;
+			const selectedText = editor.document.getText(selection);
+
+			if(selectedText){
+				try{
+					const regex = new RegExp(selectedText);
+					const panel = vscode.window.createWebviewPanel(
+						'regexVisualizer',
+						`Regex: ${selectedText}`,
+						{ viewColumn: vscode.ViewColumn.One, preserveFocus: true },
+						{ enableScripts: true, localResourceRoots: [vscode.Uri.file(`${context.extensionPath}/src`)] }
+					 );
+
+					panel.webview.html = getWebviewContent(context, regex.source);
+					vscode.window.showInformationMessage('Regex parsed and visualized successfully!');
+				}catch(e){
+					vscode.window.showErrorMessage(`Error parsing regex: ${e.message}`);
+				}
+			}else{
+				vscode.window.showWarningMessage('No regex selected for parsing.');
+			}
+		}else{
+			vscode.window.showWarningMessage('No active editor found.');
+		}
+	});
+
+	context.subscriptions.push(parseDisposable);
+}
+
+function getWebviewContent(context, regex) {
+	const path = require('path');
+	const fs = require('fs');
+	const filePath = context.asAbsolutePath(path.join('src', 'vis.html'));
+
+	let FinalTable = fs.readFileSync(filePath, 'utf8');
+	FinalTable = FinalTable.replace(
+		'<script id="regex-placeholder"></script>',
+		`<script id="regex-placeholder">const regex = ${JSON.stringify(regex)};</script>`
+	);
+	return FinalTable;
 }
 
 // This method is called when your extension is deactivated
