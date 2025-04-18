@@ -56,18 +56,12 @@ const regexMap = {
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "easyre" is now active!');
-
 	Object.keys(regexMap).forEach(commandId => {
 		const regex = regexMap[commandId];
 		if(regex){
 			const disposable = vscode.commands.registerCommand(commandId, () => {
 				const editor = vscode.window.activeTextEditor;
 				if(editor){
-					//const doc = editor.document;
 					const selection = editor.selection;
 					editor.edit(editBuilder => {
 						if(!selection.isEmpty){
@@ -133,7 +127,6 @@ function getWebviewContent(context, regex) {
 	return FinalTable;
 }
 
-// This method is called when your extension is deactivated
 function deactivate() {}
 
 module.exports = {
