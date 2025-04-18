@@ -1,2 +1,1 @@
-special-vendored-path/* linguist-vendored
-src/vis.html linguist-vendored=false
+*.html linguist-detectable=false
