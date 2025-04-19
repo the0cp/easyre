@@ -38,6 +38,14 @@
         "title": "easyre.parse: Parse Regex and Visualize it (Jex.im)"
       },
       {
+        "command": "easyre.pint",
+        "title": "easyre.pint: Insert Non-zero Positive Integer Regex"
+      },
+      {
+        "command": "easyre.nint",
+        "title": "easyre.nint: Insert Non-zero Negative Integer Regex"
+      },
+      {
         "command": "easyre.email",
         "title": "easyre.email: Insert Email Regex"
       },
@@ -70,12 +78,20 @@
         "title": "easyre.ipv6: Insert IPv6 Regex"
       },
       {
+        "command": "easyre.mac",
+        "title": "easyre.mac: Insert MAC Address Regex"
+      },
+      {
         "command": "easyre.username",
         "title": "easyre.username: Insert Username Regex"
       },
       {
         "command": "easyre.passwd",
         "title": "easyre.passwd: Insert Password Regex"
+      },
+      {
+        "command": "easyre.money",
+        "title": "easyre.money: Insert Money Regex"
       },
       {
         "command": "easyre.tel",
@@ -188,6 +204,10 @@
       {
         "command": "easyre.fax",
         "title": "easyre.fax: Insert Fax Number Regex"
+      },
+      {
+        "command": "easyre.whitespace",
+        "title": "easyre.whitespace: Insert Whitespace at Beginning/End of the Line Regex"
       },
       {
         "command": "easyre.colorhex",
