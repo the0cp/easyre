@@ -70,6 +70,10 @@
         "title": "easyre.time12: Insert 12-Hour Time Regex"
       },
       {
+        "command": "easyre.uuid",
+        "title": "easyre.uuid: Insert UUID Regex"
+      },
+      {
         "command": "easyre.ipv4",
         "title": "easyre.ipv4: Insert IPv4 Regex"
       },
@@ -92,6 +96,14 @@
       {
         "command": "easyre.money",
         "title": "easyre.money: Insert Money Regex"
+      },
+      {
+        "command": "easyre.visa",
+        "title": "easyre.visa: Insert Visa Card Regex"
+      },
+      {
+        "command": "easyre.mastercard",
+        "title": "easyre.mastercard: Insert MasterCard Regex"
       },
       {
         "command": "easyre.tel",
@@ -208,6 +220,14 @@
       {
         "command": "easyre.whitespace",
         "title": "easyre.whitespace: Insert Whitespace at Beginning/End of the Line Regex"
+      },
+      {
+        "command": "easyre.htmltag",
+        "title": "easyre.htmltag: Insert HTML Tag Regex"
+      },
+      {
+        "command": "easyre.filename",
+        "title": "easyre.filename: Insert Filename Validation Regex"
       },
       {
         "command": "easyre.colorhex",
