@@ -4,6 +4,8 @@
 
 Write Regex expressions easily with easyre.
 
+Install: [https://marketplace.visualstudio.com/items?itemName=the0cp.easyre](https://marketplace.visualstudio.com/items?itemName=the0cp.easyre)
+
 `Ctrl`+`Shift`+`P` to open the command panel. The insertion commands will be `easyre.xxx`
 
 Code snippets are templates that make it easier to enter repeating code patterns, such as loops or conditional-statements.     
