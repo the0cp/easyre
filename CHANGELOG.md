@@ -2,6 +2,10 @@
 
 All notable changes to the "easyre" extension will be documented in this file.
 
+## v1.1.1
+
+- Fix glob version
+
 ## [v1.1.0]
 
 - Add regex parser and visualizer (by Jex.im)
@@ -15,3 +19,4 @@ All notable changes to the "easyre" extension will be documented in this file.
 ## [Unreleased]
 
 - Initial release
+

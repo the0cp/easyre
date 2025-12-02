@@ -2,7 +2,7 @@
   "name": "easyre",
   "displayName": "EasyRe",
   "description": "Write regex expressions easily",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "the0cp",
   "author": {
     "name": "the0cp"
@@ -313,5 +313,8 @@
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1",
     "eslint": "^9.23.0"
+  },
+  "dependencies": {
+    "glob": "^13.0.0"
   }
 }
